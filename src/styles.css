@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --primary-white: #fff;
+    --primary-cyan: #53c3be;
+    --primary-dark: rgba(255,255,255,0);
+}
+
+body{
+font-family: "Roboto Condensed", sans-serif;
+}
+
+/********** NAVBAR **********/
+nav{
+    z-index: 2;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.logo {
+    margin-top: 1.75rem;
+    width: 16.25rem;
+}
+
+/***** MENU LINKS *****/
+nav a.nav-link{
+    font-size: .8rem;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color: var(--primary-white) !important;
+    border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 6rem !important;
+}
+
+.icon{
+    width: 25px;
+}
+
+@media(max-width: 768px){
+    .navbar-brand {
+       width: 7rem; 
+    }
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+    border-top: 0.1875rem solid var(--primary-cyan);
+}
+
+.navbar-nav > li > a:hover{
+    border-top: 0.1875rem solid var(--primary-cyan);
+}
+
+/********** HEADER **********/
+
+.header-wraper{
+    position: relative;
+    background: url(laptop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    z-index: 1;
+}
+
+.main-info h1 {
+    color: var(--primary-cyan);
+    text-transform: uppercase ;
+    letter-spacing: 0.15rem;
+}
+
+/********** TYPED-TEXT **********/
+.typed-text {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--primary-white);
+}
+@media(max-width: 768px){
+    .main-info h1{
+        font-size: 1.7rem !important;
+    }
+    .typed-text{
+        font-size: 1.3rem !important;
+    }
+}
+
+/********** HEADER MAIN BUTTON **********/
+.btn-contact{
+    width: 150px;
+    border: 1px solid var(--primary-cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primary-white);
+    margin: 2rem;
+}
+
+.btn-contact:hover{
+    text-decoration: none;
+    color: var(--primary-white);
+    background-color: var(--primary-cyan);
+    transition: .2s ease-in-out;
+}
+
+/********** Particles **********/
+.tsparticles-canvas-el{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+/********** Home **********/
+.homePage{
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
+
+.left{
+    flex: 0.5;
+    overflow: hidden;
+    margin-left: 40px;
+    
+}
+
+.right{
+    flex: 0.5;
+    position: relative;
+    margin-right: 80px;
+    
+}
+
+.imgContainer{
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    float: right;
+}
+
+.myPic{
+    height: 70%;
+    margin-bottom: 120px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    border: 5px solid #555;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper h1{
+    font-size: 60px;
+    margin: 10px 0;
+    color: var(--primary-cyan);
+}
+
+.wrapper h2{
+    font-size: 35px;
+    color: var(--primary-white);
+}
+
+.wrapper p{
+    font-size: 20px;
+    color: var(--primary-white);
+    padding-right: 20px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.btn-resume{
+    border: 1px solid var(--primary-cyan);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primary-white);;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 55px;
+    
+}
+
+.btn-resume:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-cyan);
+    transition: .2s ease-in-out;
+}
+
